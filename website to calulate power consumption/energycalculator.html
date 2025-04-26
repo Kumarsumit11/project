@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appliance Energy Calculator</title>
+  <link rel="stylesheet" href="calculatorstyle.css" />
+  <script src="energyCalculator.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Appliance Energy Calculator</h1>
+  </header>
+
+  <main>
+    <form id="energyForm">
+      <label for="wattage">Appliance Wattage (W):</label>
+      <input type="number" id="wattage" required />
+
+      <label for="hours">Hours Used Per Day:</label>
+      <input type="number" id="hours" required />
+
+      <label for="rate">Electricity Rate (₹ per kWh):</label>
+      <input type="number" id="rate" required />
+
+      <button type="submit">Calculate</button>
+    </form>
+
+    <section id="results">
+      <h2>Results</h2>
+      <p id="dailyCost"></p>
+      <p id="monthlyCost"></p>
+      <p id="yearlyCost"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Powered by POWERLYTICS</p>
+  </footer>
+
+</body>
+</html>
